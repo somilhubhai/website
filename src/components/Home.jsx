@@ -142,9 +142,8 @@ const Home = () => {
       </h2>
       <hr className="w-24 m-auto mt-8" />
       <div className="md:flex block mt-5 w-full px-10 py-24">
-        {/* Mobile View */}
         <img src={choose} alt="choose-us" className="size-1/2 rounded" />
-        {/* Mobile View ends */}
+
         <div className="text-center px-8 mt-8">
           <p>
             {" "}
