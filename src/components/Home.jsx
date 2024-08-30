@@ -30,26 +30,6 @@ const Home = () => {
 
     // cards ends
 
-    // lists starts
-    gsap.fromTo(
-      ".lists",
-      {
-        x: -100,
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        scrollTrigger: {
-          trigger: ".lists",
-          start: "top 80%",
-          end: "bottom 20%",
-          scrub: true,
-        },
-      }
-    );
-    // lists ends
-
     // services headings starts
     gsap.from(".headings", {
       x: -300,
@@ -141,8 +121,12 @@ const Home = () => {
         Why to Choose us?
       </h2>
       <hr className="w-24 m-auto mt-8" />
-      <div className="md:flex block mt-5 w-full px-10 py-24">
-        <img src={choose} alt="choose-us" className="size-1/2 rounded" />
+      <div className="md:flex block mt-5 w-full md:px-10 px-2 md:py-24">
+        <img
+          src={choose}
+          alt="choose-us"
+          className="md:size-1/2 w-full rounded"
+        />
 
         <div className="text-center px-8 mt-8">
           <p>
