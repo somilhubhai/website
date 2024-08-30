@@ -1,7 +1,7 @@
 import { useGSAP } from "@gsap/react";
-import about from "../assets/aboutPage.jpg";
-import missions from "../assets/missions.avif";
-import values from "../assets/values.jpg";
+import about from "../assets/aboutPage.webp";
+import missions from "../assets/missions.webp";
+import values from "../assets/values.webp";
 import gsap from "gsap";
 
 const tl = gsap.timeline();
@@ -50,17 +50,17 @@ const About = () => {
             molestias ducimus optio nulla veritatis? Eius!
           </p>
         </div>
-        <div className="w-[35rem] shadow-xl shadow-slate-400 py-5 md:px-10 md:mt-0 mt-5 md:ml-auto card2">
+        <div className="w-[35rem] shadow-xl shadow-slate-400 py-5 md:px-10 md:mt-0 mt-5 md:ml-auto card2 rounded-md">
           <img
             src={about}
             alt="about"
-            className="w-96 rounded-md md:ml-10 ml-4 "
+            className="md:min-w-96 w-72 rounded-md md:ml-5 ml-4 "
           />
           <div className="flex">
             <div className="rounded-sm p-2 h-12 w-32 bg-gray-300 ml-10 mt-10">
               <p className="text-black font-semibold">20+ Branches</p>
             </div>
-            <div className="rounded-sm py-2 px-1 h-12 w-32 bg-gray-300 ml-24 mt-10">
+            <div className="rounded-sm py-2 px-1 h-12 w-32 bg-gray-300 md:ml-24 ml-5 mt-10">
               <p className="text-black font-semibold">10K+ Projects</p>
             </div>
           </div>
@@ -68,7 +68,7 @@ const About = () => {
             <div className="rounded-sm px-4 h-12 w-32 bg-gray-300 ml-10">
               <p className="text-black font-semibold">10+year experience</p>
             </div>
-            <div className="rounded-sm px-4 h-12 w-32 bg-gray-300 ml-24">
+            <div className="rounded-sm px-4 h-12 w-32 bg-gray-300 md:ml-24 ml-5">
               <p className="text-black font-semibold">Customer Support</p>
             </div>
           </div>

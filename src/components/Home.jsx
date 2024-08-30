@@ -1,35 +1,33 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import about from "../assets/about.jpg";
 import { useEffect } from "react";
-import wealth from "../assets/wealth.jpg";
-import education from "../assets/education.jpg";
-import risk from "../assets/risk.jpg";
-import banking from "../assets/banking.jpg";
-import tax from "../assets/tax.jpg";
-import chartImg from "../assets/chartImg.png";
+import about from "../assets/about.webp";
+import wealth from "../assets/wealth.webp";
+import education from "../assets/education.webp";
+import risk from "../assets/risk.webp";
+import banking from "../assets/banking.webp";
+import tax from "../assets/tax.webp";
+import choose from "../assets/choose.jpg";
 import user from "../assets/user.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
- 
   useGSAP(() => {
     // cards starts
-  gsap.matchMedia().add("(min-width: 768px)", () => {
-    gsap.to(".card1", {
-      x: 300,
-      opacity: 1,
-      duration: 1.5,
+    gsap.matchMedia().add("(min-width: 768px)", () => {
+      gsap.to(".card1", {
+        x: 300,
+        opacity: 1,
+        duration: 1.5,
+      });
+      gsap.to(".card2", {
+        x: -300,
+        opacity: 1,
+        duration: 1.5,
+      });
     });
-    gsap.to(".card2", {
-      x: -300,
-      opacity: 1,
-      duration: 1.5,
-    });
-  });
-      
-    
+
     // cards ends
 
     // lists starts
@@ -110,29 +108,29 @@ const Home = () => {
       {/* Hero section  */}
       <div className="min-h-screen">
         {/* card1 */}
-        <div className="bg-gray-800 md:h-[25rem] md:w-[19rem] w-60 md:mt-24 mt-10 ml-5 card1 animate-none">
-          <h2 className="font-semibold leading-7 p-4">
+        <div className="bg-gray-800 md:h-[25rem] md:w-[19rem] rounded h-72 w-60 md:mt-24 mt-10 ml-5 card1 px-2">
+          <h2 className="font-semibold md:leading-7 md:p-4">
             We are the one who can manage your all financial decisions and will
             help you to achieve success in your life and bring financial
             literacy in your life at one place without any hidden cost. What are
             you waiting for get start with us
           </h2>
 
-          <button className="border-2 ml-4 md:mt-8 px-4 md:py-2 py-1 font-semibold hover:bg-black duration-500 rounded transition-all">
+          <button className="border-2 ml-4 md:mt-8 mt-3 px-4 md:py-2 py-1 font-semibold hover:bg-black duration-500 rounded transition-all">
             Get started
           </button>
         </div>
         {/* card1 ends */}
 
         {/* card2 starts */}
-        <div className="bg-gray-800 md:h-[25rem] md:w-[19rem] w-60 absolute md:top-80 top-[28rem] right-2 md:right-10 card2">
-          <h2 className="leading-7 font-semibold p-4">
+        <div className="bg-gray-800 md:h-[25rem] md:w-[19rem] h-72 w-60 absolute md:top-80 p-2 top-[25rem] right-2 md:right-10 card2">
+          <h2 className="md:leading-7 font-semibold md:p-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Temporibus, nisi ducimus. Nam facilis repudiandae facere, animi
             magni incidunt fugiat earum beatae vero quae ullam blanditiis,
             porro, error corporis natus dolorem?
           </h2>
-          <button className="border-2 ml-4 md:mt-8 px-4 md:py-2 py-1 font-semibold hover:bg-black duration-500 rounded transition-all">
+          <button className="border-2 ml-4 md:mt-8 mt-3 px-4 md:py-2 py-1 font-semibold hover:bg-black duration-500 rounded transition-all">
             Register for free
           </button>
         </div>
@@ -143,53 +141,29 @@ const Home = () => {
         Why to Choose us?
       </h2>
       <hr className="w-24 m-auto mt-8" />
-      <div className="md:flex block md:mt-20 mt-10 w-full">
+      <div className="md:flex block mt-5 w-full px-10 py-24">
         {/* Mobile View */}
-        <div className="h-[20rem] md:ml-24 md:h-[25rem] md:w-80 w-72 ml-14 border-2 border-r-4 border-l-4 rounded-md">
-          <div className="bg-white h-5 relative flex">
-            <div className="absolute md:top-0 md:left-0 md:mt-1 md:ml-20 ml-40 w-2 h-2 bg-black rounded-full"></div>
-            <div className="absolute md:top-0 md:left-0 md:mt-1 md:ml-24 ml-24 w-10 h-2 bg-gray-600 rounded-full"></div>
-          </div>
-
-          <div className="flex justify-center items-center h-[calc(100%-6rem)]">
-            {" "}
-            <img src={chartImg} alt="chart" />
-          </div>
-          <div className="bg-white mt-[2.3rem] rounded h-10 relative">
-            <div className="absolute top-2 left-2 md:ml-20 ml-28 w-8 h-8 bg-black rounded-full"></div>
-          </div>
-        </div>
+        <img src={choose} alt="choose-us" className="size-1/2 rounded" />
         {/* Mobile View ends */}
-        <div className="text-center px-8 md:px-24 mt-8">
-          <ul className="leading-7 lists">
-            <li>
-              <b>Decades of Industry Experience:</b> <br /> Our seasoned
-              financial experts bring years of industry knowledge, ensuring your
-              finances are managed with the highest level of professionalism and
-              precision.
-            </li>
-            <li>
-              <b>Tailored Financial Plans:</b> <br /> We understand that every
-              client is unique, which is why we create customized financial
-              strategies that align with your individual goals and
-              circumstances.
-            </li>
-            <li>
-              <b>One-on-One Consultations:</b> <br /> Our advisors take the time
-              to understand your needs, offering personalized advice that helps
-              you make informed financial decisions.
-            </li>
-            <li>
-              <b>Advanced Financial Tools:</b> <br /> We leverage the latest
-              financial technology to provide you with real-time insights,
-              secure transactions, and efficient portfolio management.
-            </li>
-            <li>
-              <b> Fiduciary Responsibility:</b> <br /> As fiduciaries, we are
-              legally and morally obligated to prioritize your financial
-              well-being above all else.
-            </li>
-          </ul>
+        <div className="text-center px-8 mt-8">
+          <p>
+            {" "}
+            we pride ourselves on delivering personalized financial solutions
+            tailored to your unique needs. With our deep industry expertise, we
+            provide reliable guidance and strategic advice, ensuring your
+            financial decisions are both informed and beneficial. Our
+            comprehensive services cover everything from wealth management and
+            retirement planning to securing your family’s future, all while
+            maintaining a commitment to your individual goals and aspirations.
+            Trust us to be your partner in achieving financial success, with a
+            focus on integrity, transparency, and excellence.
+          </p>
+          <p className="mt-5">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni
+            numquam, quibusdam nihil architecto esse sapiente inventore
+            excepturi consequatur quia sed ipsa cum? Provident nihil in eius
+            culpa, pariatur corrupti deleniti!
+          </p>
         </div>
       </div>
 

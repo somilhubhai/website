@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Footer = () => {
   return (
     <>
-      <footer className="h-[50vh] border-t-2 shadow-teal-200">
+      <footer className="h-[55vh] border-t-2 shadow-teal-200">
         <h2 className="font-bold md:mt-10 mt-4 md:ml-10 ml-5">Somil Gupta</h2>
         <div className="md:p-10 flex">
           <h2 className="font-bold md:ml-40 ml-5 mt-4">Socials</h2>

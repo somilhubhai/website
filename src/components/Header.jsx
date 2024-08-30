@@ -21,25 +21,25 @@ const Header = () => {
         isMobile && !showMenu ? "hidden" : "ml-auto bg-transparent"
       }`}
     >
-      <li className="md:hover:scale-110 duration-150 transition-transform transform hover:text-orange-200">
+      <li className="transition-all hover:text-white">
         <Link to="/">Home</Link>
       </li>
-      <li className="md:hover:scale-110 duration-150 transition-transform transform hover:text-orange-200">
+      <li className="transition-all hover:text-white">
         <Link to="/about"> About us</Link>
       </li>
-      <li className="md:hover:scale-110 duration-150 transition-transform transform hover:text-orange-200">
+      <li className="transition-all hover:text-white">
         <Link to="/contact">Contact us</Link>
       </li>
-      <button className=" border-2 border-white px-4 md:py-2 py-1 duration-150 hover:bg-white hover:text-black rounded-sm transition-all ">
+      <button className=" border-2 border-white px-4 md:py-2 py-1 hover:bg-white hover:text-black rounded-sm transition-all ">
         <Link to="/user/signup">Sign up</Link>
       </button>
     </ul>
   );
 
   return (
-    <nav className="md:flex items-center justify-between px-5 py-2 md:py-6 shadow-xl font-bold">
+    <nav className="md:flex items-center justify-between text-gray-400 px-5 py-2 md:py-6 shadow-xl font-bold">
       <Link to="/">
-        <h2 className="text-md md:text-xl">Somil Gupta</h2>
+        <h2 className="text-md hover:text-white transition-all md:text-xl">Somil Gupta</h2>
       </Link>
       {isMobile ? (
         <div className="">
